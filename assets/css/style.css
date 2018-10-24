@@ -1,7 +1,7 @@
 body {
     background-color: #eee;
     padding-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background: url('../images/donutShop.png') no-repeat;
     background-size: cover;
@@ -26,9 +26,16 @@ h4,h5,h6 {
     letter-spacing: 10px;
 }
 
+#hangmanImage{
+    padding: 20px;
+    border: 3px solid red;
+    margin: 100px;
+    size: 400px x 500px;
+}
+
 #pressKeyTryAgain, 
 #gameover-image, 
-#youwin-image { display: none;}
+#youwin-image 
 .gameplay-column {
     padding-top: 20px;
     border: 3px solid #fff;

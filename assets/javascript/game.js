@@ -1,16 +1,27 @@
+
+
 var selectableWords =           
     [
-        "ROSE",
-        "LILY",
-        "SUNFLOWER",
-        "TULIP",
-        "DAISY",
-        "DAHILIA",
-        "BEGONIA",
-        "DAFFODIL",
-        "CARNATION",
-        "COMPILER",
-        "IRISES",
+        "EMMA",
+        "BRANDI",
+        "KAREN",
+        "LANA",
+        "TODD",
+        "GARY",
+        "JAMES",
+        "CHRIS",
+        "SHANNA",
+        "JULIE",
+        "AMANDA",
+        "ANNA",
+        "COLE",
+        "CHRISTINE",
+        "DESTINY",
+        "JACKIE",
+        "STACY",
+        "KENDRA",
+        "AARON",
+        "MICHAEL",
     ];
 
 const maxTries = 10;            
@@ -24,9 +35,10 @@ var wins = 0;
 
 function resetGame() {
     remainingGuesses = maxTries;
-    currentWordIndex = Math.floor(Math.random() * (selectableWords.length));
+    currentWordIndex = Math.floor(Math.random()*(selectableWords.length));
     guessedLetters = [];
     guessingWord = [];
+    //document.getElementById(hangmanImage).src ="assets/images/peace.jpg";
 
 for (var i = 0; i < selectableWords[currentWordIndex].length; i++) {
         guessingWord.push("_");
@@ -49,6 +61,9 @@ function updateDisplay() {
     document.getElementById("guessedLetters").innerText = guessedLetters;
 };
 
+function updateHangmanImage() {
+    document.getElementById("hangmanImage").src = "assets/images/peace" + (maxTries - remainingGuesses) + ".jpg";
+};
 
 function evaluateGuess(letter) {
     var positions = [];
@@ -72,7 +87,7 @@ function checkWin() {
         document.getElementById("youwin-image").style.cssText = "display: block";
         document.getElementById("pressKeyTryAgain").style.cssText= "display: block";
         wins++;
-        winSound.play();
+        //winSound.play();
         hasFinished = true;
     }
 };
@@ -82,7 +97,7 @@ function checkWin() {
 function checkLoss()
 {
     if(remainingGuesses <= 0) {
-        loseSound.play();
+        //loseSound.play();
         document.getElementById("gameover-image").style.cssText = "display: block";
         document.getElementById("pressKeyTryAgain").style.cssText = "display:block";
         hasFinished = true;
