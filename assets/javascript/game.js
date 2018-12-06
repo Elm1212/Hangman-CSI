@@ -22,6 +22,7 @@ var selectableWords =
         "KENDRA",
         "AARON",
         "MICHAEL",
+        "JARED",
     ];
 
 const maxTries = 10;            
