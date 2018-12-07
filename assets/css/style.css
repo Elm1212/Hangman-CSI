@@ -1,9 +1,9 @@
 body {
     background-color: #eee;
     padding-top: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Satisfy', cursive; 
     color: white;
-    background: url('../images/donutShop.png') no-repeat;
+    background: url('../images/pixieDust.png') no-repeat;
     background-size: cover;
 }
 .container { 
@@ -13,7 +13,7 @@ body {
 h1,h2,h3,
 h4,h5,h6 {
     padding: 5px;
-    background-color:orangered;
+    background-color:goldenrod;
     opacity: .9;
 }
 #title-image, #gameover-image, #youwin-image{ 
@@ -28,9 +28,9 @@ h4,h5,h6 {
 
 #hangmanImage{
     padding: 20px;
-    border: 3px solid red;
+    border: 3px solid gold;
     margin: 100px;
-    size: 400px x 500px;
+    size: 200px x 300px;
 }
 
 #pressKeyTryAgain, 
@@ -50,6 +50,6 @@ h4,h5,h6 {
     border: 3px solid #fff;
     text-align: center;
     margin-top: 20px;
-    min-height: 500px;
+    min-height: 400px;
     background-color: rgba(255, 255, 255, .3);
 }
